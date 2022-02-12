@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+这里是登陆界面<br>
+<form action="/polls/index/" method="post">
+    {% csrf_token %}
+    <p><label>用户名：</label><input name="user"/></p>
+    <p><label>密码：</label><input name="pwd"/></p>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>
